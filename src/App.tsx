@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import NotFoundPage from './pages/NotFoundPage';
 import LayoutPage from './pages/LayoutPage';
@@ -21,7 +21,7 @@ function App() {
           {/*  */}
           <Route path="/pagolf" element={<LayoutPage />}>
             <Route path="header" element={<PagolfHeader />} />
-            <Route path="footer-button" element={<PagolfFooterButton fontSize="medium" onNextClick={() => {}} />} />
+            <Route path="footer-button" element={<PagolfFooterButton fontSize="medium" onNextClick={() => { }} />} />
           </Route>
 
           {/* Default Redirect */}

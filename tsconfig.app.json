@@ -29,8 +29,6 @@
     "noUncheckedSideEffectImports": true
   },
   "include": [
-    "bak2",
-    "src/hooks",
-    "src/types"
-, "src/pages/NotFoundPage.tsx"  ]
+    "src"
+  ]
 }

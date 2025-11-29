@@ -21,7 +21,8 @@ export default defineConfig({
     }),
     dts({
       insertTypesEntry: true,
-      tsconfigPath: './tsconfig.app.json'
+      tsconfigPath: './tsconfig.app.json',
+      rollupTypes: true
     }),
   ],
   build: {
