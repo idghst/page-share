@@ -1,3 +1,4 @@
+import { default as default_2 } from 'react';
 import { JSX } from 'react/jsx-runtime';
 
 export declare const FONT_CONFIG: FontConfig;
@@ -34,6 +35,18 @@ declare interface HeaderProps {
     fontSize?: FontSize;
     fontConfig?: FontConfig;
     onBackClick?: () => void;
+}
+
+export declare const Modal: default_2.FC<ModalProps>;
+
+declare interface ModalProps {
+    isOpen: boolean;
+    onClose: () => void;
+    title?: string;
+    message: string;
+    onConfirm: () => void;
+    confirmLabel?: string;
+    cancelLabel?: string;
 }
 
 export { }
