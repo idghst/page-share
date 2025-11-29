@@ -37,6 +37,8 @@ declare interface HeaderProps {
     onBackClick?: () => void;
 }
 
+export declare const LayoutPage: () => JSX.Element;
+
 export declare const Modal: default_2.FC<ModalProps>;
 
 declare interface ModalProps {
@@ -48,5 +50,7 @@ declare interface ModalProps {
     confirmLabel?: string;
     cancelLabel?: string;
 }
+
+export declare const NotFoundPage: () => JSX.Element;
 
 export { }
