@@ -369,7 +369,7 @@ const W = {
       )
     ] })
   ] })
-] }) : null, fe = () => /* @__PURE__ */ t.jsxs("div", { className: "flex flex-col items-center justify-center w-full h-full bg-white dark:bg-black text-gray-800 dark:text-gray-100", children: [
+] }) : null, fe = () => /* @__PURE__ */ t.jsxs("div", { className: "flex flex-col items-center justify-center w-full h-screen bg-white dark:bg-black text-gray-800 dark:text-gray-100", children: [
   /* @__PURE__ */ t.jsx("h1", { className: "text-6xl font-bold mb-4", children: "404" }),
   /* @__PURE__ */ t.jsx("p", { className: "text-xl mb-8", children: "Page Not Found" })
 ] }), xe = () => /* @__PURE__ */ t.jsx("div", { className: "w-full min-h-screen bg-white dark:bg-black transition-colors duration-200", children: /* @__PURE__ */ t.jsx(ae, {}) });
