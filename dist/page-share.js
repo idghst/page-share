@@ -1,32 +1,32 @@
 import te from "react";
 import { useNavigate as D, Outlet as ae } from "react-router-dom";
 var p = { exports: {} }, b = {};
-var L;
+var I;
 function ne() {
-  if (L) return b;
-  L = 1;
+  if (I) return b;
+  I = 1;
   var i = Symbol.for("react.transitional.element"), f = Symbol.for("react.fragment");
-  function c(u, l, s) {
+  function c(u, s, l) {
     var d = null;
-    if (s !== void 0 && (d = "" + s), l.key !== void 0 && (d = "" + l.key), "key" in l) {
-      s = {};
-      for (var m in l)
-        m !== "key" && (s[m] = l[m]);
-    } else s = l;
-    return l = s.ref, {
+    if (l !== void 0 && (d = "" + l), s.key !== void 0 && (d = "" + s.key), "key" in s) {
+      l = {};
+      for (var x in s)
+        x !== "key" && (l[x] = s[x]);
+    } else l = s;
+    return s = l.ref, {
       $$typeof: i,
       type: u,
       key: d,
-      ref: l !== void 0 ? l : null,
-      props: s
+      ref: s !== void 0 ? s : null,
+      props: l
     };
   }
   return b.Fragment = f, b.jsx = c, b.jsxs = c, b;
 }
-var g = {};
-var I;
+var v = {};
+var L;
 function oe() {
-  return I || (I = 1, process.env.NODE_ENV !== "production" && (function() {
+  return L || (L = 1, process.env.NODE_ENV !== "production" && (function() {
     function i(e) {
       if (e == null) return null;
       if (typeof e == "function")
@@ -101,11 +101,11 @@ function oe() {
         return "<...>";
       }
     }
-    function l() {
+    function s() {
       var e = R.A;
       return e === null ? null : e.getOwner();
     }
-    function s() {
+    function l() {
       return Error("react-stack-top-frame");
     }
     function d(e) {
@@ -115,7 +115,7 @@ function oe() {
       }
       return e.key !== void 0;
     }
-    function m(e, r) {
+    function x(e, r) {
       function a() {
         S || (S = !0, console.error(
           "%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)",
@@ -133,7 +133,7 @@ function oe() {
         "Accessing element.ref was removed in React 19. ref is now a regular prop. It will be removed from the JSX Element type in a future release."
       )), e = this.props.ref, e !== void 0 ? e : null;
     }
-    function U(e, r, a, n, h, y) {
+    function U(e, r, a, n, g, y) {
       var o = a.ref;
       return e = {
         $$typeof: P,
@@ -158,7 +158,7 @@ function oe() {
         configurable: !1,
         enumerable: !1,
         writable: !0,
-        value: h
+        value: g
       }), Object.defineProperty(e, "_debugTask", {
         configurable: !1,
         enumerable: !1,
@@ -166,7 +166,7 @@ function oe() {
         value: y
       }), Object.freeze && (Object.freeze(e.props), Object.freeze(e)), e;
     }
-    function N(e, r, a, n, h, y) {
+    function N(e, r, a, n, g, y) {
       var o = r.children;
       if (o !== void 0)
         if (n)
@@ -181,10 +181,10 @@ function oe() {
         else w(o);
       if (A.call(r, "key")) {
         o = i(e);
-        var x = Object.keys(r).filter(function(re) {
+        var m = Object.keys(r).filter(function(re) {
           return re !== "key";
         });
-        n = 0 < x.length ? "{key: someKey, " + x.join(": ..., ") + ": ...}" : "{key: someKey}", F[o + n] || (x = 0 < x.length ? "{" + x.join(": ..., ") + ": ...}" : "{}", console.error(
+        n = 0 < m.length ? "{key: someKey, " + m.join(": ..., ") + ": ...}" : "{key: someKey}", F[o + n] || (m = 0 < m.length ? "{" + m.join(": ..., ") + ": ...}" : "{}", console.error(
           `A props object containing a "key" prop is being spread into JSX:
   let props = %s;
   <%s {...props} />
@@ -193,7 +193,7 @@ React keys must be passed directly to JSX without using spread:
   <%s key={someKey} {...props} />`,
           n,
           o,
-          x,
+          m,
           o
         ), F[o + n] = !0);
       }
@@ -202,15 +202,15 @@ React keys must be passed directly to JSX without using spread:
         for (var T in r)
           T !== "key" && (a[T] = r[T]);
       } else a = r;
-      return o && m(
+      return o && x(
         a,
         typeof e == "function" ? e.displayName || e.name || "Unknown" : e
       ), U(
         e,
         o,
         a,
-        l(),
-        h,
+        s(),
+        g,
         y
       );
     }
@@ -220,19 +220,19 @@ React keys must be passed directly to JSX without using spread:
     function O(e) {
       return typeof e == "object" && e !== null && e.$$typeof === P;
     }
-    var v = te, P = Symbol.for("react.transitional.element"), q = Symbol.for("react.portal"), k = Symbol.for("react.fragment"), J = Symbol.for("react.strict_mode"), V = Symbol.for("react.profiler"), z = Symbol.for("react.consumer"), G = Symbol.for("react.context"), X = Symbol.for("react.forward_ref"), H = Symbol.for("react.suspense"), B = Symbol.for("react.suspense_list"), Z = Symbol.for("react.memo"), E = Symbol.for("react.lazy"), Q = Symbol.for("react.activity"), K = Symbol.for("react.client.reference"), R = v.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, A = Object.prototype.hasOwnProperty, ee = Array.isArray, j = console.createTask ? console.createTask : function() {
+    var h = te, P = Symbol.for("react.transitional.element"), q = Symbol.for("react.portal"), k = Symbol.for("react.fragment"), J = Symbol.for("react.strict_mode"), V = Symbol.for("react.profiler"), z = Symbol.for("react.consumer"), G = Symbol.for("react.context"), X = Symbol.for("react.forward_ref"), H = Symbol.for("react.suspense"), B = Symbol.for("react.suspense_list"), Z = Symbol.for("react.memo"), E = Symbol.for("react.lazy"), Q = Symbol.for("react.activity"), K = Symbol.for("react.client.reference"), R = h.__CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE, A = Object.prototype.hasOwnProperty, ee = Array.isArray, j = console.createTask ? console.createTask : function() {
       return null;
     };
-    v = {
+    h = {
       react_stack_bottom_frame: function(e) {
         return e();
       }
     };
-    var S, C = {}, $ = v.react_stack_bottom_frame.bind(
-      v,
-      s
-    )(), Y = j(u(s)), F = {};
-    g.Fragment = k, g.jsx = function(e, r, a) {
+    var S, C = {}, $ = h.react_stack_bottom_frame.bind(
+      h,
+      l
+    )(), Y = j(u(l)), F = {};
+    v.Fragment = k, v.jsx = function(e, r, a) {
       var n = 1e4 > R.recentlyCreatedOwnerStacks++;
       return N(
         e,
@@ -242,7 +242,7 @@ React keys must be passed directly to JSX without using spread:
         n ? Error("react-stack-top-frame") : $,
         n ? j(u(e)) : Y
       );
-    }, g.jsxs = function(e, r, a) {
+    }, v.jsxs = function(e, r, a) {
       var n = 1e4 > R.recentlyCreatedOwnerStacks++;
       return N(
         e,
@@ -253,52 +253,52 @@ React keys must be passed directly to JSX without using spread:
         n ? j(u(e)) : Y
       );
     };
-  })()), g;
+  })()), v;
 }
 var M;
-function se() {
+function le() {
   return M || (M = 1, process.env.NODE_ENV === "production" ? p.exports = ne() : p.exports = oe()), p.exports;
 }
-var t = se();
+var t = le();
 const W = {
   small: {
     header: "text-xl",
-    footer_button: "text-base",
-    label: "text-sm",
-    input: "text-base",
-    button: "text-base"
+    footer_button: "text-xl",
+    label: "text-xl",
+    input: "text-xl",
+    button: "text-xl"
   },
   medium: {
     header: "text-2xl",
-    footer_button: "text-lg",
-    label: "text-base",
-    input: "text-lg",
-    button: "text-lg"
+    footer_button: "text-2xl",
+    label: "text-2xl",
+    input: "text-2xl",
+    button: "text-2xl"
   },
   large: {
     header: "text-3xl",
-    footer_button: "text-xl",
-    label: "text-lg",
-    input: "text-xl",
-    button: "text-xl"
+    footer_button: "text-3xl",
+    label: "text-3xl",
+    input: "text-3xl",
+    button: "text-3xl"
   }
 }, ce = ({
   showBackButton: i = !0,
   showHomeButton: f = !0,
   title: c = "제목",
   fontSize: u = "medium",
-  fontConfig: l = W,
-  onBackClick: s
+  fontConfig: s = W,
+  onBackClick: l
 }) => {
-  const d = D(), m = () => {
-    s ? s() : d(-1);
+  const d = D(), x = () => {
+    l ? l() : d(-1);
   }, _ = () => {
     d("/pagolf/main");
   };
   return /* @__PURE__ */ t.jsxs("header", { className: "flex items-center justify-between mb-12 h-[40px]", children: [
-    i && /* @__PURE__ */ t.jsx("button", { onClick: m, className: "p-2", children: /* @__PURE__ */ t.jsx("svg", { className: "w-6 h-6", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ t.jsx("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M15 19l-7-7 7-7" }) }) }),
+    i && /* @__PURE__ */ t.jsx("button", { onClick: x, className: "p-2", children: /* @__PURE__ */ t.jsx("svg", { className: "w-6 h-6", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ t.jsx("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M15 19l-7-7 7-7" }) }) }),
     /* @__PURE__ */ t.jsx("div", {}),
-    /* @__PURE__ */ t.jsx("h1", { className: `${l[u].header} font-bold`, children: c }),
+    /* @__PURE__ */ t.jsx("h1", { className: `${s[u].header} font-bold`, children: c }),
     /* @__PURE__ */ t.jsx("div", {}),
     f && /* @__PURE__ */ t.jsx("button", { onClick: _, className: "p-2", children: /* @__PURE__ */ t.jsx("svg", { className: "w-6 h-6", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ t.jsx("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" }) }) })
   ] });
@@ -307,17 +307,17 @@ const W = {
   nextButtonLabel: f = "다음",
   fontSize: c,
   fontConfig: u = W,
-  onNextClick: l,
-  onBackClick: s
+  onNextClick: s,
+  onBackClick: l
 }) => {
-  const d = D(), m = () => {
-    s ? s() : d(-1);
+  const d = D(), x = () => {
+    l ? l() : d(-1);
   };
   return /* @__PURE__ */ t.jsxs("div", { className: "mt-auto pt-4 flex gap-3", children: [
     i && /* @__PURE__ */ t.jsx(
       "button",
       {
-        onClick: m,
+        onClick: x,
         className: `flex-1 bg-gray-200 text-gray-700 font-bold py-4 rounded-xl ${u[c].footer_button} hover:bg-gray-300 transition-colors dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700`,
         children: "뒤로"
       }
@@ -325,7 +325,7 @@ const W = {
     /* @__PURE__ */ t.jsx(
       "button",
       {
-        onClick: l,
+        onClick: s,
         className: `${i ? "flex-[2]" : "w-full"} bg-[#1e4632] text-white font-bold py-4 rounded-xl ${u[c].footer_button} hover:bg-[#163324] transition-colors shadow-lg dark:bg-[#4ade80] dark:text-[#1e4632]`,
         children: f
       }
@@ -336,8 +336,8 @@ const W = {
   onClose: f,
   title: c,
   message: u,
-  onConfirm: l,
-  confirmLabel: s = "확인",
+  onConfirm: s,
+  confirmLabel: l = "확인",
   cancelLabel: d = "취소"
 }) => i ? /* @__PURE__ */ t.jsxs("div", { className: "fixed inset-0 z-50 flex items-center justify-center px-4", children: [
   /* @__PURE__ */ t.jsx(
@@ -362,9 +362,9 @@ const W = {
       /* @__PURE__ */ t.jsx(
         "button",
         {
-          onClick: l,
+          onClick: s,
           className: "flex-1 py-3 px-4 rounded-xl font-medium text-white bg-[#1e4632] hover:bg-[#163325] dark:bg-[#4ade80] dark:text-[#1e4632] dark:hover:bg-[#4ade80]/90 transition-colors",
-          children: s
+          children: l
         }
       )
     ] })
@@ -372,12 +372,12 @@ const W = {
 ] }) : null, fe = () => /* @__PURE__ */ t.jsxs("div", { className: "flex flex-col items-center justify-center h-screen bg-white dark:bg-black text-gray-800 dark:text-gray-100", children: [
   /* @__PURE__ */ t.jsx("h1", { className: "text-6xl font-bold mb-4", children: "404" }),
   /* @__PURE__ */ t.jsx("p", { className: "text-xl mb-8", children: "Page Not Found" })
-] }), me = () => /* @__PURE__ */ t.jsx("div", { className: "w-full min-h-screen bg-white dark:bg-black transition-colors duration-200", children: /* @__PURE__ */ t.jsx(ae, {}) });
+] }), xe = () => /* @__PURE__ */ t.jsx("div", { className: "w-full min-h-screen bg-white dark:bg-black transition-colors duration-200", children: /* @__PURE__ */ t.jsx(ae, {}) });
 export {
   W as FONT_CONFIG,
   ue as FooterButton,
   ce as Header,
-  me as LayoutPage,
+  xe as LayoutPage,
   de as Modal,
   fe as NotFoundPage
 };
